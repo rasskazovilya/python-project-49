@@ -10,7 +10,7 @@ def guess(name):
 
     for _ in range(3):
         rand_num = random.randint(1, 1000)
-        print('Question: {}'.format(rand_num))
+        ask_question(rand_num)
 
         answer = input('Your answer: ')
         correct_answer = 'yes' if is_even(rand_num) else 'no'
@@ -27,6 +27,10 @@ def guess(name):
 
     print('Congratulations, {}!'.format(name))
     return
+
+
+def ask_question(question):
+    print('Question: {}'.format(question))
 
 
 def main():
