@@ -21,11 +21,5 @@ def play_even_game():
     return True
 
 
-def main():
-    name = printing.greeting()
-    has_win = play_even_game()
-    printing.print_result(name, has_win)
-
-
 if __name__ == '__main__':
-    main()
+    printing.main(play_even_game)
