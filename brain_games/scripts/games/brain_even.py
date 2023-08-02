@@ -6,7 +6,7 @@ def is_even(num):
     return num % 2 == 0
 
 
-def guess():
+def play_even_game():
 
     for _ in range(3):
         rand_num = random.randint(1, 1000)
@@ -23,7 +23,7 @@ def guess():
 
 def main():
     name = printing.greeting()
-    has_win = guess()
+    has_win = play_even_game()
     printing.print_result(name, has_win)
 
 
