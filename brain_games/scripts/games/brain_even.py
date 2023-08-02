@@ -22,5 +22,9 @@ def play_even_game():
     return True
 
 
-if __name__ == '__main__':
+def main():
     printing.main(play_even_game)
+
+
+if __name__ == '__main__':
+    main()

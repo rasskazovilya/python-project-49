@@ -25,5 +25,9 @@ def play_calc_game():
     return True
 
 
-if __name__ == '__main__':
+def main():
     printing.main(play_calc_game)
+
+
+if __name__ == '__main__':
+    main()
