@@ -15,7 +15,7 @@ def guess(name):
         answer = input('Your answer: ')
         correct_answer = 'yes' if is_even(rand_num) else 'no'
 
-        if not compare_answers(answer, correct_answer):
+        if not is_answer_correct(answer, correct_answer):
             print('Let\'s try again, {}!'.format(name))
             return
 
@@ -28,11 +28,11 @@ def ask_question(question):
     print('Question: {}'.format(question))
 
 
-def compare_answers(answer, correct_answer):
+def is_answer_correct(answer, correct_answer):
 
-    is_answer_correct = answer == correct_answer
+    is_correct = answer == correct_answer
 
-    if is_answer_correct:
+    if is_correct:
         print('Correct!')
     else:
         print(
@@ -40,7 +40,7 @@ def compare_answers(answer, correct_answer):
             'Correct answer was \'{}\''.format(correct_answer)
         )
 
-    return is_answer_correct
+    return is_correct
 
 
 def main():
