@@ -1,5 +1,5 @@
 import random
-from scripts import printing
+from .. import printing
 
 
 def play_calc_game():
