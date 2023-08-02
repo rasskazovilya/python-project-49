@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import random
-from brain_games.scripts import printing
+from brain_games.scripts import logic
 
 
 def calc_game():
@@ -17,7 +17,7 @@ def calc_game():
 
 
 def main():
-    printing.engine(calc_game)
+    logic.engine(calc_game)
 
 
 if __name__ == '__main__':

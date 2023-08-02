@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import random
-from brain_games.scripts import printing
+from brain_games.scripts import logic
 
 
 def is_even(num):
@@ -15,7 +15,7 @@ def even_game():
 
 
 def main():
-    printing.engine(even_game)
+    logic.engine(even_game)
 
 
 if __name__ == '__main__':
