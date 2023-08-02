@@ -6,3 +6,9 @@
 [![asciicast](https://asciinema.org/a/16AUqNQ2iPpXN2XbBkiC6fj6E.svg)](https://asciinema.org/a/16AUqNQ2iPpXN2XbBkiC6fj6E)
 ### Game #2: Calculator
 [![asciicast](https://asciinema.org/a/d9CzZAAZHhPqPGGLGWX7cnwaF.svg)](https://asciinema.org/a/d9CzZAAZHhPqPGGLGWX7cnwaF)
+### Game #3: Greatest Common Divisor
+RELEASE DATE: August 2023
+### Game #4: Arithmetic Progression
+RELEASE DATE: August 2023
+### Game $5: Prime Number
+RELEASE DATE: August 2023
