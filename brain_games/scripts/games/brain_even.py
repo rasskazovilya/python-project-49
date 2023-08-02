@@ -1,29 +1,21 @@
 #!/usr/bin/env python3
 import random
-from .. import printing
+from brain_games.scripts import printing
 
 
 def is_even(num):
     return num % 2 == 0
 
 
-def play_even_game():
+def even_game():
+    rand_num = random.randint(1, 1000)
+    correct_answer = 'yes' if is_even(rand_num) else 'no'
 
-    for _ in range(3):
-        rand_num = random.randint(1, 1000)
-        printing.ask_question(rand_num)
-
-        answer = input('Your answer: ')
-        correct_answer = 'yes' if is_even(rand_num) else 'no'
-
-        if not printing.is_answer_correct(answer, correct_answer):
-            return False
-
-    return True
+    return rand_num, correct_answer
 
 
 def main():
-    printing.main(play_even_game)
+    printing.engine(even_game)
 
 
 if __name__ == '__main__':
