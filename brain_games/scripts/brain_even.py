@@ -15,7 +15,7 @@ def guess(name):
         answer = input('Your answer: ')
         correct_answer = 'yes' if is_even(rand_num) else 'no'
 
-        if compare_answers(answer, correct_answer):
+        if not compare_answers(answer, correct_answer):
             print('Let\'s try again, {}!'.format(name))
             return
 
