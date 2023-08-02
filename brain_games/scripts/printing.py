@@ -36,3 +36,9 @@ def print_result(name, has_win):
         print('Congratulations, {}!'.format(name))
     else:
         print('Let\'s try again, {}!'.format(name))
+
+
+def main(play_game_fn):
+    name = greeting()
+    has_win = play_game_fn()
+    print_result(name, has_win)
