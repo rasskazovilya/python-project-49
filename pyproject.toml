@@ -3,6 +3,7 @@ name = "hexlet-code"
 version = "0.1.0"
 description = ""
 authors = ["Ilya <rasskazov_ilya_98@mail.ru>"]
+repository = "https://github.com/rasskazovilya/python-project-49"
 readme = "README.md"
 packages = [
   { include = "brain_games" },
