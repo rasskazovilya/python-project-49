@@ -20,7 +20,7 @@ def prime_game():
 
 def main():
     game_condition = (
-        'Answer "yes" if the number is prime, otherwise answer "no".'
+        'Answer "yes" if given number is prime. Otherwise answer "no".'
     )
     logic.engine(prime_game, game_condition)
 
