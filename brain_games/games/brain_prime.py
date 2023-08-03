@@ -11,7 +11,6 @@ def is_prime(num):
     return True
 
 
-
 def prime_game():
     rand_num = random.randint(1, 100)
     correct_answer = 'yes' if is_prime(rand_num) else 'no'
@@ -20,7 +19,9 @@ def prime_game():
 
 
 def main():
-    game_condition = 'Answer "yes" if the number is prime, otherwise answer "no".'
+    game_condition = (
+        'Answer "yes" if the number is prime, otherwise answer "no".'
+    )
     logic.engine(prime_game, game_condition)
 
 
