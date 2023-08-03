@@ -22,7 +22,6 @@ def is_answer_correct(answer, correct_answer):
 def greeting():
     print('Welcome to the Brain Games!')
     name = cli.welcome_user()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
 
     return name
 
@@ -47,7 +46,8 @@ def play_game(game_fn):
     return True
 
 
-def engine(game_fn):
+def engine(game_fn, game_condition):
     name = greeting()
+    print(game_condition)
     has_win = play_game(game_fn)
     print_result(name, has_win)
