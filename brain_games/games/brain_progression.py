@@ -5,7 +5,7 @@ from brain_games.scripts import logic
 
 def generate_progression():
     start = random.randint(1, 50)
-    end = random.randint(start+50, 200)
+    end = random.randint(start + 50, 200)
     step = random.randint(3, 10)
     return list(map(str, range(start, end, step)))
 
