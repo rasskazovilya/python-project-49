@@ -11,7 +11,7 @@ def generate_progression():
 
     start = random.randint(1, MAX_START)
     end = random.randint(
-        start + MIN_PROGRESSION_ELEMENTS*MAX_STEP, MAX_END
+        start + MIN_PROGRESSION_ELEMENTS * MAX_STEP, MAX_END
     )
     step = random.randint(3, MAX_STEP)
     return list(map(str, range(start, end, step)))
