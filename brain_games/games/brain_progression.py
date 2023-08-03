@@ -17,7 +17,7 @@ def missing_number(progression):
     # multiple times will replace new number in existing sequence
     # every time
     progression[index_missing] = '..'
-    return progression, missing
+    return ' '.join(progression), missing
 
 
 def progression_game():
