@@ -2,12 +2,10 @@ from brain_games import cli
 
 
 def ask_question(question):
-
     print('Question: {}'.format(question))
 
 
 def is_answer_correct(answer, correct_answer):
-
     is_correct = answer == correct_answer
 
     if is_correct:
@@ -22,7 +20,6 @@ def is_answer_correct(answer, correct_answer):
 
 
 def greeting():
-
     print('Welcome to the Brain Games!')
     name = cli.welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
@@ -38,7 +35,6 @@ def print_result(name, has_win):
 
 
 def play_game(game_fn):
-
     for _ in range(3):
         question, correct_answer = game_fn()
 
