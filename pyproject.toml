@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Hexlet project 1: 5 different brain games in terminal"
 authors = ["Ilya <rasskazov_ilya_98@mail.ru>"]
 repository = "https://github.com/rasskazovilya/python-project-49"
 readme = "README.md"
