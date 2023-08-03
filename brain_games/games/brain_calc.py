@@ -17,7 +17,8 @@ def calc_game():
 
 
 def main():
-    logic.engine(calc_game)
+    game_condition = 'What is the result of the expression?'
+    logic.engine(calc_game, game_condition)
 
 
 if __name__ == '__main__':

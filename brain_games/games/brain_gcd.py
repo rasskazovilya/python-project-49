@@ -25,7 +25,8 @@ def gcd_game():
 
 
 def main():
-    logic.engine(gcd_game)
+    game_condition = 'Find the greatest common divisor of given numbers.'
+    logic.engine(gcd_game, game_condition)
 
 
 if __name__ == '__main__':

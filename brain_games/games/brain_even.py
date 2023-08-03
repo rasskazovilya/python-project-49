@@ -15,7 +15,8 @@ def even_game():
 
 
 def main():
-    logic.engine(even_game)
+    game_condition = 'Answer "yes" if the number is even, otherwise answer "no".'
+    logic.engine(even_game, game_condition)
 
 
 if __name__ == '__main__':

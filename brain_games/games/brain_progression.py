@@ -27,7 +27,8 @@ def progression_game():
 
 
 def main():
-    logic.engine(progression_game)
+    game_condition = 'What number is missing in the progression?'
+    logic.engine(progression_game, game_condition)
 
 
 if __name__ == '__main__':
