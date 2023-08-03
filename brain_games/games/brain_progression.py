@@ -4,9 +4,16 @@ from brain_games.scripts import logic
 
 
 def generate_progression():
-    start = random.randint(1, 50)
-    end = random.randint(start + 50, 200)
-    step = random.randint(3, 10)
+    MAX_START = 50
+    MAX_END = 200
+    MIN_PROGRESSION_ELEMENTS = 5
+    MAX_STEP = 10
+
+    start = random.randint(1, MAX_START)
+    end = random.randint(
+        start + MIN_PROGRESSION_ELEMENTS*MAX_STEP, MAX_END
+    )
+    step = random.randint(3, MAX_STEP)
     return list(map(str, range(start, end, step)))
 
 
