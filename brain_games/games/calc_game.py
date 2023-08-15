@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import random
-from brain_games import logic
 
 
 def calc_game():
@@ -14,12 +13,3 @@ def calc_game():
     correct_answer = str(eval(expression))
 
     return expression, correct_answer
-
-
-def main():
-    game_condition = 'What is the result of the expression?'
-    logic.engine(calc_game, game_condition)
-
-
-if __name__ == '__main__':
-    main()
