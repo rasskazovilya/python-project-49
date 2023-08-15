@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import random
-from brain_games import logic
 
 
 def is_prime(num):
@@ -19,14 +18,3 @@ def prime_game():
     correct_answer = 'yes' if is_prime(rand_num) else 'no'
 
     return rand_num, correct_answer
-
-
-def main():
-    game_condition = (
-        'Answer "yes" if given number is prime. Otherwise answer "no".'
-    )
-    logic.engine(prime_game, game_condition)
-
-
-if __name__ == '__main__':
-    main()
