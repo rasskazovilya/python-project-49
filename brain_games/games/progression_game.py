@@ -1,6 +1,4 @@
-#!/usr/bin/env python3
 import random
-from brain_games import logic
 
 
 def generate_progression():
@@ -31,12 +29,3 @@ def progression_game():
     progression = generate_progression()
     progression, correct_answer = missing_number(progression)
     return progression, correct_answer
-
-
-def main():
-    game_condition = 'What number is missing in the progression?'
-    logic.engine(progression_game, game_condition)
-
-
-if __name__ == '__main__':
-    main()
