@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import random
-from brain_games.scripts import logic
+from brain_games import logic
 
 
 def is_prime(num):
