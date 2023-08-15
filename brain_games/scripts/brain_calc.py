@@ -2,6 +2,7 @@
 from brain_games import logic
 from brain_games.games import calc_game
 
+
 def main():
     game_condition = 'What is the result of the expression?'
     logic.engine(calc_game, game_condition)
