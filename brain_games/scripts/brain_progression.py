@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from brain_games import logic
-from brain_games.games import progression_game
+from brain_games.games.progression_game import progression_game
 
 
 def main():
