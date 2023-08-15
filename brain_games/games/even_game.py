@@ -11,6 +11,3 @@ def even_game():
     correct_answer = 'yes' if is_even(rand_num) else 'no'
 
     return rand_num, correct_answer
-
-
-
