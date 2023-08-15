@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import random
-from brain_games import logic
 
 
 def is_even(num):
@@ -14,12 +13,4 @@ def even_game():
     return rand_num, correct_answer
 
 
-def main():
-    game_condition = (
-        'Answer "yes" if the number is even, otherwise answer "no".'
-    )
-    logic.engine(even_game, game_condition)
 
-
-if __name__ == '__main__':
-    main()
