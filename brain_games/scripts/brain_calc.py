@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 from brain_games import logic
-from brain_games.games.calc_game import calc_game
+import brain_games.games.calc_game
 
 
 def main():
-    game_condition = 'What is the result of the expression?'
-    logic.engine(calc_game, game_condition)
+    logic.engine(brain_games.games.calc_game)
 
 
 if __name__ == '__main__':
