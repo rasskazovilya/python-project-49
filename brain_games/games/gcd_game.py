@@ -1,6 +1,9 @@
 import random
 
 
+GAME_CONDITION = 'Find the greatest common divisor of given numbers.'
+
+
 def gcd(num1, num2):
     '''Naive gcd calculation'''
     gcd_result = 1

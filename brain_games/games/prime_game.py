@@ -1,6 +1,9 @@
 import random
 
 
+GAME_CONDITION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
 def is_prime(num):
     '''Naive implementation of primality test'''
     if num == 1:

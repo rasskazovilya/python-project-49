@@ -1,6 +1,9 @@
 import random
 
 
+GAME_CONDITION = 'What number is missing in the progression?'
+
+
 def generate_progression():
     MAX_START = 50
     MAX_END = 200
