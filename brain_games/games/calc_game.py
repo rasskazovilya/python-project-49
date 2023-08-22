@@ -1,7 +1,7 @@
 import random
 
 
-def calc_game():
+def game():
     operators = ['+', '-', '*']
 
     operator = random.choice(operators)

@@ -25,7 +25,7 @@ def missing_number(progression):
     return ' '.join(progression), missing
 
 
-def progression_game():
+def game():
     progression = generate_progression()
     progression, correct_answer = missing_number(progression)
     return progression, correct_answer

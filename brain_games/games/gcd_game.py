@@ -12,7 +12,7 @@ def gcd(num1, num2):
     return gcd_result
 
 
-def gcd_game():
+def game():
     num1 = random.randint(1, 100)
     num2 = random.randint(1, 100)
 
