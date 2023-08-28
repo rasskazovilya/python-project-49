@@ -2,7 +2,8 @@ import random
 
 
 GAME_RULES = 'Find the greatest common divisor of given numbers.'
-
+MIN_NUM = 1
+MAX_NUM = 1000
 
 def gcd(num1, num2):
     '''Naive gcd calculation'''
@@ -16,8 +17,8 @@ def gcd(num1, num2):
 
 
 def game():
-    num1 = random.randint(1, 100)
-    num2 = random.randint(1, 100)
+    num1 = random.randint(MIN_NUM, MAX_NUM)
+    num2 = random.randint(MIN_NUM, MAX_NUM)
 
     expression = '{} {}'.format(num1, num2)
     correct_answer = str(gcd(num1, num2))
