@@ -6,7 +6,7 @@ MIN_NUM = 1
 MAX_NUM = 100
 
 
-def game():
+def play():
     operators = ['+', '-', '*']
 
     operator = random.choice(operators)

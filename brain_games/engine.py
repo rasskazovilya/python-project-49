@@ -10,7 +10,7 @@ def run(game_module):
     print(game_module.GAME_RULES)
 
     for _ in range(GAME_ROUNDS):
-        question, correct_answer = game_module.game()
+        question, correct_answer = game_module.play()
 
         print('Question: {}'.format(question))
         answer = input('Your answer: ')

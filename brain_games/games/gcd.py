@@ -17,7 +17,7 @@ def gcd(num1, num2):
     return gcd_result
 
 
-def game():
+def play():
     num1 = random.randint(MIN_NUM, MAX_NUM)
     num2 = random.randint(MIN_NUM, MAX_NUM)
 
