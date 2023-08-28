@@ -5,6 +5,7 @@ GAME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 MIN_NUM = 1
 MAX_NUM = 100
 
+
 def is_prime(num):
     '''Naive implementation of primality test'''
     if num == 1:

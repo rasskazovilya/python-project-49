@@ -5,6 +5,7 @@ GAME_RULES = 'What is the result of the expression?'
 MIN_NUM = 1
 MAX_NUM = 100
 
+
 def game():
     operators = ['+', '-', '*']
 

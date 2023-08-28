@@ -5,6 +5,7 @@ GAME_RULES = 'Find the greatest common divisor of given numbers.'
 MIN_NUM = 1
 MAX_NUM = 1000
 
+
 def gcd(num1, num2):
     '''Naive gcd calculation'''
     gcd_result = 1
