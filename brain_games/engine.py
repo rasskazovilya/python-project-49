@@ -4,7 +4,7 @@ from brain_games import cli
 GAME_ROUNDS = 3
 
 
-def engine(game_module):
+def run(game_module):
     print('Welcome to the Brain Games!')
     name = cli.welcome_user()
     print(game_module.GAME_RULES)
