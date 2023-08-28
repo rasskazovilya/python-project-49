@@ -1,7 +1,7 @@
 import random
 
 
-GAME_CONDITION = 'What number is missing in the progression?'
+GAME_RULES = 'What number is missing in the progression?'
 MAX_INITIAL = 50
 MAX_LAST = 200
 MIN_TERMS = 5

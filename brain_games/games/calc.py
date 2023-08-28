@@ -1,7 +1,7 @@
 import random
 
 
-GAME_CONDITION = 'What is the result of the expression?'
+GAME_RULES = 'What is the result of the expression?'
 
 
 def game():
