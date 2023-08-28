@@ -2,7 +2,8 @@ import random
 
 
 GAME_RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-
+MIN_NUM = 1
+MAX_NUM = 100
 
 def is_prime(num):
     '''Naive implementation of primality test'''
@@ -16,7 +17,7 @@ def is_prime(num):
 
 
 def game():
-    rand_num = random.randint(1, 100)
+    rand_num = random.randint(MIN_NUM, MAX_NUM)
     correct_answer = 'yes' if is_prime(rand_num) else 'no'
 
     return rand_num, correct_answer
