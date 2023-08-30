@@ -2,7 +2,7 @@ import random
 
 
 GAME_RULES = 'What number is missing in the progression?'
-MAX_INITIAL = 1
+MIN_INITIAL = 1
 MAX_INITIAL = 50
 MAX_LAST = 200
 MIN_TERMS = 5
@@ -30,7 +30,7 @@ def missing_number(progression, missing):
 
 def play():
     progression = generate_progression(
-        MAX_INITIAL, MAX_INITIAL, MIN_DIFF, MAX_DIFF, MAX_LAST, MIN_TERMS
+        MIN_INITIAL, MAX_INITIAL, MIN_DIFF, MAX_DIFF, MAX_LAST, MIN_TERMS
     )
     missing = random.choice(progression)
     progression, correct_answer = missing_number(progression, missing)
