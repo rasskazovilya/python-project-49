@@ -10,12 +10,7 @@ MIN_DIFF = 3
 MAX_DIFF = 10
 
 
-def generate_progression(
-    min_init, max_init, min_diff, max_diff, max_last, min_terms
-):
-    initial = random.randint(min_init, max_init)
-    last = random.randint(initial + min_terms * max_diff, max_last)
-    diff = random.randint(min_diff, max_diff)
+def generate_progression(initial, last, diff):
     return list(map(str, range(initial, last, diff)))
 
 
@@ -29,9 +24,12 @@ def missing_number(progression, missing):
 
 
 def play():
-    progression = generate_progression(
-        MIN_INITIAL, MAX_INITIAL, MIN_DIFF, MAX_DIFF, MAX_LAST, MIN_TERMS
-    )
+    initial = random.randint(MIN_INITIAL, MAX_INITIAL)
+    last = random.randint(initial + MIN_TERMS * MAX_DIFF, MAX_LAST)
+    diff = random.randint(MIN_DIFF, MAX_DIFF)
+
+    progression = generate_progression(initial, last, diff)
+    
     missing = random.choice(progression)
     progression, correct_answer = missing_number(progression, missing)
     return progression, correct_answer
