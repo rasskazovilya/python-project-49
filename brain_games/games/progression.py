@@ -29,7 +29,7 @@ def play():
     diff = random.randint(MIN_DIFF, MAX_DIFF)
 
     progression = generate_progression(initial, last, diff)
-    
+
     missing = random.choice(progression)
     progression, correct_answer = missing_number(progression, missing)
     return progression, correct_answer
