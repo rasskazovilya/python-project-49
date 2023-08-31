@@ -17,18 +17,13 @@ def run(game_module):
 
         is_correct = answer == correct_answer
 
-        if is_correct:
-            print('Correct!')
-            has_win = True
-        else:
+        if not is_correct:
             print(
                 '\'{}\' is wrong answer ;(.'.format(answer),
-                'Correct answer was \'{}\''.format(correct_answer)
+                'Correct answer was \'{}\''.format(correct_answer),
+                'Let\'s try again, {}!'.format(name)
             )
-            has_win = False
-            break
+            return
+        print('Correct!')
 
-    if has_win:
-        print('Congratulations, {}!'.format(name))
-    else:
-        print('Let\'s try again, {}!'.format(name))
+    print('Congratulations, {}!'.format(name))
